@@ -1,7 +1,7 @@
 # Amazon EKS Cluster Setup Guide for 2048 Game:
 This guide will walk you through setting up an EKS (Elastic Kubernetes Service) cluster with eksctl, deploying a sample application, and configuring an ALB (Application Load Balancer) for ingress.
 
-# Architecture:
+## Architecture:
 ![Architecture](2048-game-aws-eks.jpg)
 
 ## Prerequisites
@@ -124,5 +124,14 @@ eksctl delete cluster --name demo-cluster --region us-east-1
 By following this guide, you’ve successfully set up a scalable and managed Kubernetes environment on AWS using EKS, eksctl, and Helm. Leveraging AWS Fargate for serverless compute and the ALB Ingress Controller for efficient load balancing, this setup provides a robust foundation for deploying and managing containerized applications. AWS EKS handles the complexity of underlying infrastructure, enabling you to focus on application development and deployment without manual configuration.
 
 With Helm, application management becomes straightforward, allowing you to package, deploy, and manage Kubernetes applications with ease. This setup can be extended and customized further to suit specific application needs, whether by adding advanced IAM roles, integrating more AWS services, or scaling up with EC2 instances for greater control.
+
+The following concepts are covered with this deployment:
+- EKS
+- IAM Policy
+- IAM Role
+- Fargate
+- Ingress
+- Ingress Controller -> ALB
+- Helm
 
 Happy deploying!
